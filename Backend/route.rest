@@ -1,0 +1,31 @@
+GET http://localhost:3000/register
+
+###
+
+GET http://localhost:3000/register/681975d09e5e570e7b4550d9
+
+###
+
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+
+    "username": "gregp",
+    "registerToTweeter": "Sports"
+}
+
+###
+
+DELETE http://localhost:3000/register/681975d09e5e570e7b4550d9
+
+###
+
+PATCH  http://localhost:3000/register/681975d09e5e570e7b4550d9
+
+Content-Type: application/json
+
+{
+    "username": "new name"
+}

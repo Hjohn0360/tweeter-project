@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweeter - Dashboard</title>
+    <link rel="stylesheet" href="cssStuff/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tweeter Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="topics.html">Browse Topics</a></li>
+                    <li><a href="#" id="logout-btn">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="welcome-banner">
+                <h2>Welcome, <span id="username-display">User</span>!</h2>
+                <p>Here are your subscribed topics and recent messages.</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <section class="subscribed-topics">
+                    <h3>Your Subscribed Topics</h3>
+                    <div id="topics-container">
+                        <p class="empty-message">You haven't subscribed to any topics yet.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div id="create-topic" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Create New Topic</h3>
+                    <form id="create-topic-form">
+                        <div class="form-group">
+                            <label for="topic-title">Topic Title</label>
+                            <input type="text" id="topic-title" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Topic</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <button id="create-topic-btn" class="btn btn-floating">+</button>
+
+    </div>
+
+    <script src="jsStuff/dashboard.js"></script>
+</body>
+</html>

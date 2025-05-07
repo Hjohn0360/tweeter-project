@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweeter - Topics</title>
+    <link rel="stylesheet" href="cssStuff/style.css"></head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tweeter Topics</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="topics.html" class="active">Browse Topics</a></li>
+                    <li><a href="#" id="logout-btn">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="topics-section">
+                <div class="section-header">
+                    <h2>Available Topics</h2>
+                </div>
+                <div id="available-topics" class="topics-grid">
+                    <p class="empty-message">No topics available.</p>
+                </div>
+            </section>
+
+            <div id="topic-detail" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="topic-detail-content">
+                    </div>
+                    
+                    <div class="post-message-section">
+                        <h4>Post a Message</h4>
+                        <form id="post-message-form">
+                            <div class="form-group">
+                                <textarea id="message-content" placeholder="Type your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Post Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="jsStuff/topics.js"></script>
+</body>
+</html>
