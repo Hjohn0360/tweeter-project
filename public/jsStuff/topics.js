@@ -6,7 +6,7 @@ const postMessageForm = document.getElementById('post-message-form');
 const messageContent = document.getElementById('message-content');
 const closeModalBtns = document.querySelectorAll('.close');
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://tweeter-project-6tb9.onrender.com';
 
 function checkAuth() {
     const user = JSON.parse(localStorage.getItem('user'));

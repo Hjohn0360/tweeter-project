@@ -6,7 +6,7 @@ const createTopicModal = document.getElementById('create-topic');
 const createTopicForm = document.getElementById('create-topic-form');
 const closeModalBtns = document.querySelectorAll('.close');
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://tweeter-project-6tb9.onrender.com';
 
 function checkAuth() {
     const user = JSON.parse(localStorage.getItem('user'));

@@ -5,7 +5,7 @@ const registerContent = document.getElementById('register-content');
 const loginForm = document.getElementById('login-form');
 const registerForm = document.getElementById('register-form');
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://tweeter-project-6tb9.onrender.com';
 
 loginTab.addEventListener('click', () => {
     loginTab.classList.add('active');
